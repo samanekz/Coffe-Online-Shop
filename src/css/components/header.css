@@ -1,0 +1,63 @@
+/* 
+.header.light {
+
+}
+
+.header.dark {
+
+}
+
+.header.light nav {
+  background: #000;
+  color: #fff;
+}
+
+.header.dark nav {
+  background: #fff;
+} */
+
+
+.header.navi-light-skin{
+display: flex;
+justify-content: space-between;
+align-items: flex-start; 
+background: transparent;
+width: 100%;
+font-size: 1em;
+font-color: black;
+}
+
+.header.navi-light-skin .nav-Left img{
+width:35px;
+height:35px;
+margin-top: 10px;
+margin-left: 103px;
+background: transparent;
+}
+
+.header.navi-light-skin .nav-Right{
+display: flex;
+align-items: center;
+margin-left:  5px;
+}
+
+.header.navi-light-skin .nav-Right .menue a{
+color: #1A1A1A;
+font-family: roboto;
+font-weight: bold;
+font-size: 18px; 
+text-decoration: underline;
+padding-left: 40px;
+
+}
+
+.header.navi-light-skin .nav-Right .shopIcon{
+width: 19px;
+height: 22px;
+margin-right: 118px;
+margin-left: 10px;
+background: transparent;
+}
+
+
+

@@ -1,0 +1,159 @@
+body{
+    font-family: Roboto;
+    top: 50px;
+    color: black;
+    & a{
+        text-decoration: none;
+    }
+}
+ /* samaneh- the syle h1 chaned but it doesnt llok like a figma, especially font-weight */
+
+.product-detail{
+    margin: 10vh;
+}
+
+.product-detail .product-choosed {
+    display: flex;
+    justify-content: space-between;    
+}
+
+#cofe-foto{
+    width: 853px;
+    height: 738px;
+    margin-right: 10vh;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0px; 
+}
+
+.pr
+
+.product-detail a , p{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.product-detail a, .product-colection a{
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #1A1A1A;
+  background-color: #1A1A1A;
+  font-size: 14px;
+  padding: 13px 50px;
+  /* display: inline;
+  position:relative; */
+  width: 14vh;
+}
+
+/* .product-colection a{ */
+#all-product {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #1A1A1A;
+    font-size: 14px;
+    padding: 13px 50px;
+    border: 3px solid #FFFFFF;
+    display: inline;
+    position:relative;
+    left: 40%;
+}
+
+.product-colection a{
+    padding: 13px 0px;
+}
+
+.product-detail .product-choosed .product-container-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10vh;
+
+}
+
+
+.icons{
+    display: flex;
+
+}
+.icons img{
+    width: 53px;
+    height: 56px;
+    gap: 5px;
+    margin: 10px;
+    margin-right: 40px;
+}
+
+.icon-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.description-Maya{
+    margin: 13vh;
+    justify-content: center;
+    padding: 0vh 15vh;
+}
+
+.product-colection{
+    position: relative;
+    background-color: #1A1A1A;
+    color: white;
+    font-color: white;
+}
+.product-colection .product-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 5% 6.5%;
+    gap: 0px 1px;
+}
+
+#entdecke-cafe{
+    position: relative;
+    left: 6%;
+    padding-top: 10%;
+
+}
+.product-container .product{
+    /* display: inline; */
+    width: 24%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px 1px;
+}
+
+.product img{
+    width: 90%;
+    height: auto;
+}
+
+.product-Name{
+    margin-top: 15px;
+
+}
+
+.product-price {
+    color: #737373;
+}
+.product-colection .product-container .icons{
+    width: 15px;
+    height: auto;
+    display: flex;
+    gap: 0px;
+    color: white;
+}
+
+.product-container .product .icons img{
+    width: 17px;
+    height: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    /* samaneh - how can ic change the icon's color */
+}

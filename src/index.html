@@ -4,19 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/css/layout/header.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="/css/main.css" /> -->
   </head>
   <body>
-    {{> header }}
-    <h1>Hello World Test!</h1>
+    <div class="header">
+      <div class="navi">
+        <div class="left">
+          <a href="#"><img  id="logo-navbar" src="images/Logo.png" alt="a picture"></a>
+        </div>
+        <div class="right">
+          <img onclick="hideMenu()" id="close-icon-navbar"  src="../icon/Burger Menu close.png" alt="a picture">
+          <div>
+            <a href=""><img id="shop-icon-navbar" src="../icon/Shop Icon.png" alt="a picture"></a>
+          </div> 
+          <div class="navi-link" id="navLink">
+            <ul>
+              <li id="shop-navbar"><a href=""><p >Shop</p></a></li>
+              <li id="herkunft-navbar"><a href=""><p >Herkunft</p></a></li>
+              <li id="das-Cafe-navbar"><a href=""><p >das Café</p></a></li>
+              <!-- <hr id="herkunft-navbar-line"> -->
+              <!-- <hr id="shop-navbar-line"> -->
+            </ul>
+          </div>
+          <img onclick="showMenu()" id="burger-icon-navbar" src="../icon/Burger Menu.png" alt="a picture">
+        </div>
+         <!-- <hr id="invisible-line-navbar"> -->
+        </div>
+      <div class="text-box">
+        <label id="rustica-navbar" name="H1">Rustica</label>
+        <label id="bio-und-fair-navbar" name="Subhead m">Bio und Fair seit 1991</label>
+        <a href="" id="zum-shop-navbar">Zum Shop</a>
+      </div>
+    </div>
+    <!-- <img id="header-back-image" src="images/coffee.jpg" alt="a picture" /> -->
+    
     <main>
-      <a href="/sub-page/">Link to Subpage</a>
-      <div>Home</div>
+<!-- ---Rösterei & Cafe--- -->
+    <div>
+      <div class="coffe-shop">
+        <div class="coffe-shop-txt">
+          <h1>Rösterei & Café</h1>
+          <p>Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen Café in der Innenstadt.</p>
+          <div class="info">
+            <div class="address">
+              <p>Komm vorbei! <br>
+                Fraunhoferstr. 13, Kiel</p>
+            </div>
+            <div class="time">
+              <p>Mo – Fr 8–18 Uhr <br>
+              Sa 11–18 Uhr</p>
+            </div>
+          </div>
+        </div>
+        <div class="coffe-shop-img">
+          <img src="../images/FEND-coffee-shop.png" alt="Coffe shop Photo">
+        </div>
+      </div>
+
+      <div class="coffe-plant">
+        <div class="coffe-plant-img">
+          <img src="../images/FEND-coffee-plant.png" alt="Coffe shop Photo">
+        </div>
+        <div class="coffe-plant-txt">
+          <h1>Bio und Fair</h1>
+          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in bester Bio Qualität mehr</p>
+          <div class="info">
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ---cafe sort---  -->
+    <div class="caffe-sort">
+      
+
+    </div>
     </main>
-    <script src="/js/index.js" type="module"></script>
+    <!-- <script src="/js/index.js" type="module"></script> -->
+    <script>
+var navLink = document.getElementById("navLink");
+var closeImg = document.getElementById("close-icon-navbar")
+function showMenu(){
+    navLink.style.right = "0";
+    if (closeImg.style.visibility === "hidden") {
+      setTimeout(function() {
+        closeImg.style.visibility = "visible";}, 750);
+    } else {
+      closeImg.style.visibility = "hidden";
+    }
+}
+function hideMenu(){
+    navLink.style.right = "-600px";
+    if (closeImg.style.visibility === "hidden") {
+      closeImg.style.visibility = "visible";
+    } else {
+      closeImg.style.visibility = "hidden";
+    }
+}
+    </script>
   </body>
+  {{> footer}}
 </html>

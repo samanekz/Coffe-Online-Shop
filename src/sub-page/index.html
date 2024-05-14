@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subpage</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="../css/pages/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    {{> header }}
-    <h1>Hello World!</h1>
+    <section class="header">
+    <nav>
+        <a href=""><img src="/icon/logo.png" alt=""></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href=""></a>Das Cafe</li>
+            <li><a href=""></a>Shop</li>
+            <li><a href=""></a>Home</li>
+          </ul>
+        </div>
+    </nav>
+      <img src="../images/coffee.jpg" alt="picture of coffee">
+    </section>
     <main>
-      <div class="hero">
-        <h2 class="hero-title">HERO Title</h2>
-        <img class="hero-img" src="/images/coffee.jpg?width=1440&format=webp&quality=70" alt="coffee">
-      </div>
-      <a href="/">Home Link</a>
     </main>
     <script src="/js/index.js" type="module"></script>
   </body>

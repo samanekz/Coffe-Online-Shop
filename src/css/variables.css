@@ -1,7 +1,19 @@
 :root {
   /* Colors */
-  --div-color: red;
-
+  --div-color: black;
+  --color-white: #ffffff;
+  --color-anthrazit: #1a1a1a;
+  --color-kraftpapier: #d7be9d;
+  
   /* Text Styles */
   --h2-font-size: 26px;
+  --h2-font-weight: 900;
+
+
+  --h1-font-weight: 900;
+  --h1-font-size-m: 64px;
+  --h1-line-height-m: 1.1;
+
+  --h1-font-size-d: 96px;
+  --h1-line-height-d: 1.1;
 }
